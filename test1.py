@@ -8,12 +8,13 @@
 # 1 Button widget that spans over 2 columns underneath the Label and Entry widgets.
 import tkinter as tk
 
-
 root = tk.Tk()
 
-
-
-
-
+l1 = tk.Label(root, text = "Enter name")
+l1.grid(row = 0, column = 0)
+e1 = tk.Label(root)
+e1.grid(row = 0, column = 1)
+b1 = tk.Button(root, text = "Button")
+b1.grid(row = 1, column = 0, columnspan = 2)
 
 root.mainloop()
